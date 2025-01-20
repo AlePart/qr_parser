@@ -10,19 +10,8 @@ This script uses Mouser API. You need to get an API key from Mouser and save int
 ```
 # Supported suppliers
 ## LCSC
-```json
-{
-  "pbn": "PICK2412170040",
-  "on": "GB2412170353",
-  "pc": "C28260",
-  "pm": "CL21C222JBFNNNE",
-  "qty": 60,
-  "mc": "",
-  "cc": 1,
-  "pdi": 139269778,
-  "hp": null,
-  "wc": "ZH"
-}
+```text
+{pbn:PICK2412170040,on:GB2412170361,pc:C844917,pm:CRCW0603100RFKEA,qty:1500,mc:,cc:1,pdi:139269943,hp:11,wc:ZH}
 ```
 
 # TME
