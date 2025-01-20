@@ -87,13 +87,13 @@ def display_and_save(components, filename="output.csv"):
         with open(filename, mode='a', newline='', encoding='utf-8') as file:
             writer = csv.writer(file)
             for component in components:
-                description = fetch_mouser(component["part_number"])
+                data = fetch_mouser(component["part_number"])
                 if component["manufacturer"] and component["part_number"] and component["quantity"]:
                     writer.writerow([
-                        component["manufacturer"],
+                        data["manufacturer"],
                         component["part_number"],
                         component["quantity"],
-                        description
+                        data["descriprion"]
                     ])
         print(colored(f"Data saved to {filename}\n", 'green'))
     else:
