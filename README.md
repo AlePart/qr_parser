@@ -9,7 +9,7 @@ This script uses Mouser API. You need to get an API key from Mouser and save int
 	    "api_key":""
 	},
     "tme":
-    {
+  {
 		"token":"",
 		"secret":""
 	}
