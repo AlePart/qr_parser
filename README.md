@@ -11,8 +11,8 @@ This script uses Mouser API. You need to get an API key from Mouser and save int
   },
   "tme":
   {
-  "token":"",
-  "secret":""
+    "token":"",
+    "secret":""
   }
 }
 
