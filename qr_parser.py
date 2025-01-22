@@ -10,7 +10,7 @@ OUTPUT_FILENAME = "output.csv"
 
 def load_api_key(file_path):
     with open(file_path, 'r') as file:
-        return json.load(file)['api_key']
+        return json.load(file)['mouser']
 
 def fetch_mouser(part_number, api_key):
     headers = {"Content-Type": "application/json"}
@@ -79,7 +79,7 @@ def save_to_csv(components, filename, api_key):
     print(colored(f"Data saved to {filename}\n", 'green'))
 
 def main():
-    api_key = load_api_key(API_KEY_FILE)
+    api_key = load_api_key(API_KEY_FILE)["api_key"]
     while True:
         data = input(colored("Enter the QR code data (or type 'exit' to quit): ", 'blue')).strip()
         if data.lower() == 'exit':

@@ -1,0 +1,11 @@
+{	"mouser":
+    {
+	    "api_key":""
+	},
+    "tme":
+    {
+		"token":"",
+		"secret":""
+	}
+	
+}

@@ -4,9 +4,18 @@ This script parses QR data from some electronic suppliers and saves data into a 
 # API
 This script uses Mouser API. You need to get an API key from Mouser and save into api_key.json in the same directory as the script. The file should look like this:
 ```json
-{
-  "api_key":"xxxxxxxx-yyyy-zzzz-kkkk-wwwwwwwwwwww"
+{	"mouser":
+    {
+	    "api_key":""
+	},
+    "tme":
+    {
+		"token":"",
+		"secret":""
+	}
+	
 }
+
 ```
 # Supported suppliers
 ## LCSC
